@@ -160,13 +160,34 @@ class SinglyLinkedList {
         return false;
     }
 
-    traverse() {
+    // reversing the linked list in place
+    reverse() {
+        // swapping head with the tail
         let currentNode = this.head;
+        this.head = this.tail;
+        this.tail = currentNode;
 
-        while (currentNode !== null) {
-            console.log(currentNode.val);
+        let prev = null;
+        let next;
+
+        while (currentNode) {
+            next = currentNode.next;
+            currentNode.next = prev;
+            prev = currentNode;
+            currentNode = next;
+        }
+        return this;
+    }
+
+    // prints the linked list
+    print() {
+        let arr = [];
+        let currentNode = this.head;
+        while (currentNode) {
+            arr.push(currentNode.val);
             currentNode = currentNode.next;
         }
+        console.log(arr);
     }
 }
 
@@ -182,4 +203,5 @@ list.get(1);
 list.set(1, 7);
 list.insertAt(2, 5);
 list.removeAt(1);
-list.traverse();
+list.reverse();
+list.print();
