@@ -34,4 +34,4 @@ function validAnagram(first, second) {
 let anagram = new validAnagram('anagram', 'gramana');
 let anagram1 = new validAnagram('anagram', 'ana');
 let anagram2 = new validAnagram('altitude', 'latitude');
-let anagram3 = new validAnagram('anagram', 'anagram');
+let anagram3 = new validAnagram('listen', 'slient');
