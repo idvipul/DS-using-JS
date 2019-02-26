@@ -91,6 +91,7 @@ class BinarySearchTree {
         return visited;
     }
 
+    // root-left-right
     dfsPreOrder() {
         let visited = [];
 
@@ -105,6 +106,7 @@ class BinarySearchTree {
         return visited;
     }
 
+    // left-right-root
     dfsPostOrder() {
         let visited = [];
 
@@ -118,6 +120,7 @@ class BinarySearchTree {
         return visited;
     }
 
+    // left-root-right
     dfsInOrder() {
         let visited = [];
 

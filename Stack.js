@@ -1,3 +1,5 @@
+// Stack -> Last-In-First-Out (LIFO) or First-In-Last-Out (FILO)
+
 class Node{
     constructor(val) {
         this.val = val;

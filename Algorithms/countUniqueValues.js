@@ -1,3 +1,4 @@
+// accepts a sorted array
 function countUniqueValues(arr) {
     let i = 0;
     let j;

@@ -1,3 +1,5 @@
+// Queue -> First-In-First-Out (FIFO) or Last-In-Last-Out (LILO)
+
 class Node {
     constructor(val) {
         this.val = val;
