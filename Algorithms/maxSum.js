@@ -14,7 +14,7 @@ function maxSum(arr, windowSize) {
     tempSum = maxSum;
 
     for (i = windowSize; i < arr.length; i++) {
-        tempSum = tempSum + arr[i] - arr[i -  windowSize];
+        tempSum += arr[i] - arr[i -  windowSize];
         maxSum = Math.max(tempSum, maxSum);
     }
     console.log(maxSum);
@@ -23,3 +23,4 @@ function maxSum(arr, windowSize) {
 
 let array = new maxSum([2, 6, 9, 2, 1, 8, 5, 6, 3], 4);
 let array1 = new maxSum([1,3,-1,-3,5,3,6,7], 3);
+let array2 = new maxSum([1,3,-1,-3,5,3,6,7], 13);
