@@ -1,20 +1,14 @@
 function isSubsequence(str1, str2) {
-    let first = [];
-    let second = [];
-
-    for (let i = 0; i < str1.length; i++) {
-        first[i] = (str1.charAt(i));
+    if (str1.length === 0) {
+        console.log(false);
+        return true;
     }
 
-    for (let i = 0; i < str2.length; i++) {
-        second[i] = (str2.charAt(i));
-    }
-
-    for (let i = 0, j = 0; i < second.length; i++) {
-        if (first[j] === second[i]) {
+    for (let i = 0, j = 0; i < str2.length; i++) {
+        if (str1[j] === str2[i]) {
             j++;
         }
-        if (j === first.length) {
+        if (j === str1.length) {
             console.log(true);
             return true;
         }
@@ -27,3 +21,4 @@ let string1 = new isSubsequence("hello", "hello world");
 let string2 = new isSubsequence("sing", "sting");
 let string3 = new isSubsequence("abc", "abracadabra");
 let string4 = new isSubsequence("abc", "acb");
+let string5 = new isSubsequence("", "acb");

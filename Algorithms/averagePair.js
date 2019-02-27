@@ -10,7 +10,7 @@ function averagePair(arr, average) {
 
     while (left < right) {
         let avg = arr[left] + arr[right] / 2;
-        if ( (avg ) === average ) {
+        if ( avg === average ) {
             console.log(true);
             return true;
         } else if (avg < average) {
