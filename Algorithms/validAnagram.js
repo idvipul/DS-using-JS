@@ -14,7 +14,7 @@ function validAnagram(first, second) {
             lookup[letter] = 1;
         }
     }
-    // console.log(lookup);
+    console.log(lookup);
 
     for (let i = 0; i < second.length; i++) {
         let letter = second.charAt(i);
