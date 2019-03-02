@@ -5,6 +5,7 @@ function pivot(arr, start = 0, end = arr.length + 1) {
         array[j] = temp;
     }
 
+    // always considering 1st element as the pivot
     let pivot = arr[start];
     let swapIdx = start;
 
@@ -19,7 +20,7 @@ function pivot(arr, start = 0, end = arr.length + 1) {
 }
 
 function quickSort(arr, left = 0, right = arr.length - 1) {
-    // conditon exists when left = right
+    // conditon exits when left = right --> base case
     if (left < right) {
         let pivotIndex = pivot(arr, left, right);
         // left
