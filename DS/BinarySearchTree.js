@@ -68,6 +68,7 @@ class BinarySearchTree {
         return false;
     }
 
+    // level by level
     bfs() {
         let currentNode = this.root;
         let queue = [],
